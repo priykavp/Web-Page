@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+}
+#imagecontainer {
+    text-align: center;
+}
+img{
+    height: 300px;
+    width: 300px;
+    padding-right: 50px;
+}
+.animation {
+    animation-name: image;
+    animation-duration: 0.5s;
+}
+.grid {
+    padding-top: 55px;
+    display: grid;
+    grid-template-columns: 45% 35% 20%;
+}
+
+button{
+    padding: 10px 40px;
+    margin-left: -20px;
+    background-color: rgb(16, 205, 253);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+#counter {
+    padding-left: 60px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 5px;
+    border-top: 1px solid black;
+}
+
+@keyframes image {
+    0% {
+        transform: rotatex(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+   
+}
+#timer{
+    width: 27px;
+    margin-left: 40px;
+}

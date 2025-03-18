@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
+    <script src="javascript.js"></script>
+    <title>Assignment 3</title>
+</head>
+<body>
+    <h1>Assignment 3</h1>
+
+    <div id="imagecontainer">
+    <img onclick="do_animation(event)" class="animation" id="changeImage" src="triangle.png" alt="Image">
+    <img onclick="do_animation(event)" id="changeImage2" class="animation" src="instagram.webp"  alt="Image">
+    <img onclick="do_animation(event)" id="changeImage3" class="animation" src="cars1.jpg"  alt="Image">
+    </div>
+
+
+    <div class="grid">
+        <div>
+            <h5>Timeout (500-10000ms)</h5>
+            <input type="text" onchange="userEnterTime()" class="form-control" id="timeInput" name="timeInput">
+            <p id="timeOutput"></p>
+        </div>
+        <div>
+            <button id="randomize" onclick="randomizeButton()">Randomize</button>
+            <p id="timer">0.0</p>
+        </div>
+        <div class="imageCount">
+            <p>Image change count</p>
+            <p id="counter">0</p>
+        </div>
+    </div>
+
+    <footer>Priyansh Kavani 000881868</footer>
+</body>
+</html>
